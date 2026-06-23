@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Ledesma — Diseñador Gráfico Creativo</title>
+  <meta name="description" content="Diseñador gráfico especializado en branding, identidad visual y UI/UX. Transformo ideas en experiencias visuales que conectan y emocionan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">
+      <span>C</span><span>L</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#work" class="nav__link">Trabajo</a></li>
+      <li><a href="#about" class="nav__link">Sobre mí</a></li>
+      <li><a href="#services" class="nav__link">Servicios</a></li>
+      <li><a href="#contact" class="nav__link">Contacto</a></li>
+    </ul>
+    <a href="#contact" class="nav__cta">Hablemos ↗</a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#work" class="mobile-link" data-num="01">Trabajo</a>
+      <a href="#about" class="mobile-link" data-num="02">Sobre mí</a>
+      <a href="#services" class="mobile-link" data-num="03">Servicios</a>
+      <a href="#contact" class="mobile-link" data-num="04">Contacto</a>
+    </nav>
+    <div class="mobile-menu__footer">cristian@ledesma.design</div>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+
+    <!-- Floating decorative shapes -->
+    <div class="hero__shapes" aria-hidden="true">
+      <div class="shape shape--lime"></div>
+      <div class="shape shape--coral"></div>
+      <div class="shape shape--purple"></div>
+      <div class="shape shape--ring"></div>
+      <div class="shape shape--star">✦</div>
+    </div>
+
+    <!-- Rotating availability badge -->
+    <div class="hero__badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200" class="badge__svg">
+        <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/>
+        <text class="badge__text">
+          <textPath href="#circlePath">✦ DISPONIBLE ✦ PARA ✦ PROYECTOS ✦ CREATIVOS ✦</textPath>
+        </text>
+      </svg>
+      <div class="badge__center">★</div>
+    </div>
+
+    <!-- Main content -->
+    <div class="hero__content">
+      <div class="hero__tag">
+        <span class="tag-dot"></span>
+        Diseñador Gráfico &amp; Director Creativo
+      </div>
+      <h1 class="hero__title">
+        <span class="title-line title-line--1">CRISTIAN</span>
+        <span class="title-line title-line--2"><em>LEDESMA</em></span>
+      </h1>
+      <p class="hero__sub">
+        Transformo ideas en experiencias visuales que conectan, emocionan y dejan huella. Cada proyecto es una aventura creativa sin límites.
+      </p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--lime">
+          <span>Ver mi trabajo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost-dark">Contáctame ↗</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="stat__value">
+            <span class="stat__num" data-target="40">0</span><span class="stat__suffix">+</span>
+          </div>
+          <span class="stat__label">Proyectos</span>
+        </div>
+        <div class="hero__stat">
+          <div class="stat__value">
+            <span class="stat__num" data-target="5">0</span><span class="stat__suffix">+</span>
+          </div>
+          <span class="stat__label">Años</span>
+        </div>
+        <div class="hero__stat">
+          <div class="stat__value">
+            <span class="stat__num" data-target="100">0</span><span class="stat__suffix">%</span>
+          </div>
+          <span class="stat__label">Pasión</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-indicator__line">
+        <div class="scroll-indicator__ball"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TICKER ═══════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>✦ BRANDING</span><span>✦ IDENTIDAD VISUAL</span>
+      <span>✦ DISEÑO EDITORIAL</span><span>✦ UI/UX</span>
+      <span>✦ PACKAGING</span><span>✦ ILUSTRACIÓN</span>
+      <span>✦ MOTION GRAPHICS</span><span>✦ DIRECCIÓN DE ARTE</span>
+      <span>✦ BRANDING</span><span>✦ IDENTIDAD VISUAL</span>
+      <span>✦ DISEÑO EDITORIAL</span><span>✦ UI/UX</span>
+      <span>✦ PACKAGING</span><span>✦ ILUSTRACIÓN</span>
+      <span>✦ MOTION GRAPHICS</span><span>✦ DIRECCIÓN DE ARTE</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ WORK / PROJECTS ═══════════ -->
+  <section class="work" id="work">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag">01 — TRABAJO</span>
+        <h2 class="section-title reveal-item">Proyectos <em>seleccionados</em></h2>
+      </header>
+
+      <div class="projects">
+
+        <!-- Project 01 -->
+        <article class="project reveal-item">
+          <div class="project__thumb" style="--pc:#BCFF00; --ps:#0E0E0E">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">NOVA</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">01</span>
+              <div class="project__tags">
+                <span>Branding</span><span>Identidad Visual</span>
+              </div>
+            </div>
+            <h3 class="project__name">Nova Studio</h3>
+            <p class="project__desc">Sistema de identidad visual completo para un estudio de arquitectura contemporáneo. Geometría pura, tipografía precisa y coherencia en cada touchpoint.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project project--rev reveal-item">
+          <div class="project__thumb" style="--pc:#FF4757; --ps:#FFF8F0">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">BLOOM</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">02</span>
+              <div class="project__tags">
+                <span>Packaging</span><span>Editorial</span>
+              </div>
+            </div>
+            <h3 class="project__name">Bloom Botánica</h3>
+            <p class="project__desc">Línea de packaging para cosmética natural. Ilustraciones botánicas, colores vibrantes y sensación premium que enamora desde el primer vistazo.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project reveal-item">
+          <div class="project__thumb" style="--pc:#5C5BD5; --ps:#F4FF47">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">PULSE</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">03</span>
+              <div class="project__tags">
+                <span>UI/UX</span><span>Diseño Web</span>
+              </div>
+            </div>
+            <h3 class="project__name">Pulse Music App</h3>
+            <p class="project__desc">Rediseño completo de experiencia de usuario para plataforma de streaming musical independiente. Energía visual, flujo intuitivo y personalidad única.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project project--rev reveal-item">
+          <div class="project__thumb" style="--pc:#00BFA5; --ps:#001A16">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">VERDE</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">04</span>
+              <div class="project__tags">
+                <span>Branding</span><span>Packaging</span>
+              </div>
+            </div>
+            <h3 class="project__name">Verde Roots</h3>
+            <p class="project__desc">Marca para restaurante de cocina de origen. Identidad que conecta lo rústico con lo moderno sin perder la autenticidad que lo hace especial.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 05 -->
+        <article class="project reveal-item">
+          <div class="project__thumb" style="--pc:#FF9500; --ps:#1A0F00">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">RITUAL</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">05</span>
+              <div class="project__tags">
+                <span>Editorial</span><span>Dirección de Arte</span>
+              </div>
+            </div>
+            <h3 class="project__name">Ritual Magazine</h3>
+            <p class="project__desc">Dirección de arte para revista cultural trimestral. Maquetación audaz, jerarquía visual sorprendente y narrativa gráfica que engancha página tras página.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 06 -->
+        <article class="project project--rev reveal-item">
+          <div class="project__thumb" style="--pc:#FF2D78; --ps:#FFFFFF">
+            <div class="pt-shape pt-shape--circle"></div>
+            <div class="pt-shape pt-shape--square"></div>
+            <div class="pt-shape pt-shape--ring"></div>
+            <span class="pt-label">SHIFT</span>
+          </div>
+          <div class="project__body">
+            <div class="project__meta">
+              <span class="project__num">06</span>
+              <div class="project__tags">
+                <span>Dirección de Arte</span><span>Motion</span>
+              </div>
+            </div>
+            <h3 class="project__name">Shift Festival</h3>
+            <p class="project__desc">Identidad completa para festival de arte digital y cultura contemporánea. Del concepto inicial hasta la señalética del evento, todo bajo un mismo sistema visual.</p>
+            <a href="#" class="project__cta">Ver proyecto ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Visual / Portrait side -->
+        <div class="about__visual">
+          <div class="about__portrait">
+            <div class="portrait__frame">
+              <div class="portrait__initials">CL</div>
+            </div>
+            <div class="portrait__blob"></div>
+          </div>
+          <blockquote class="about__quote">
+            <p>"El diseño no es decoración.<br>Es comunicación con alma."</p>
+            <cite>— Cristian Ledesma</cite>
+          </blockquote>
+        </div>
+
+        <!-- Text side -->
+        <div class="about__info">
+          <span class="section-tag section-tag--light">02 — SOBRE MÍ</span>
+          <h2 class="section-title section-title--light reveal-item">Detrás del <em>diseño</em></h2>
+          <p class="about__bio reveal-item">
+            Soy Cristian, diseñador gráfico con más de 5 años transformando ideas en marcas que hablan. Nací con un lápiz en la mano y crecí frente a una pantalla.
+          </p>
+          <p class="about__bio reveal-item" data-delay="0.1">
+            Lo que me mueve es encontrar esa <strong>chispa única</strong> de cada proyecto: el ángulo inesperado, el color que nadie esperaba, la tipografía que lo dice todo sin decirlo. Creo que el buen diseño no solo se ve bien, <strong>se siente bien</strong>.
+          </p>
+          <div class="about__facts reveal-item" data-delay="0.2">
+            <div class="fact-item">
+              <div class="fact-item__dot" style="background:#BCFF00"></div>
+              <span>Apasionado del color y la tipografía experimental</span>
+            </div>
+            <div class="fact-item">
+              <div class="fact-item__dot" style="background:#FF4757"></div>
+              <span>Obsesionado con los sistemas visuales coherentes</span>
+            </div>
+            <div class="fact-item">
+              <div class="fact-item__dot" style="background:#5C5BD5"></div>
+              <span>Siempre buscando el próximo reto creativo</span>
+            </div>
+            <div class="fact-item">
+              <div class="fact-item__dot" style="background:#FF9500"></div>
+              <span>Creo que cada píxel cuenta una historia</span>
+            </div>
+          </div>
+          <div class="about__tools reveal-item" data-delay="0.3">
+            <span class="tool-pill">Figma</span>
+            <span class="tool-pill">Illustrator</span>
+            <span class="tool-pill">Photoshop</span>
+            <span class="tool-pill">InDesign</span>
+            <span class="tool-pill">After Effects</span>
+            <span class="tool-pill">Procreate</span>
+            <span class="tool-pill">Blender</span>
+            <span class="tool-pill">HTML &amp; CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag section-tag--light">03 — SERVICIOS</span>
+        <h2 class="section-title section-title--light reveal-item">Lo que <em>ofrezco</em></h2>
+      </header>
+      <div class="services__grid">
+        <div class="service-card reveal-item" data-delay="0">
+          <div class="service-card__accent" style="background:#BCFF00"></div>
+          <span class="service-card__icon">◈</span>
+          <h3>Branding &amp;<br>Identidad Visual</h3>
+          <p>Marcas desde cero con logo, paleta, tipografía y sistema. Una identidad que dure, conecte y diferencie en cualquier soporte.</p>
+          <span class="service-card__num">01</span>
+        </div>
+        <div class="service-card reveal-item" data-delay="0.1">
+          <div class="service-card__accent" style="background:#FF4757"></div>
+          <span class="service-card__icon">◉</span>
+          <h3>Diseño Editorial &amp;<br>Packaging</h3>
+          <p>Revistas, libros, catálogos y envases con narrativa visual poderosa. Cada pieza es una experiencia táctil y memorable.</p>
+          <span class="service-card__num">02</span>
+        </div>
+        <div class="service-card reveal-item" data-delay="0.2">
+          <div class="service-card__accent" style="background:#5C5BD5"></div>
+          <span class="service-card__icon">◎</span>
+          <h3>UI/UX &amp;<br>Diseño Web</h3>
+          <p>Interfaces hermosas y funcionales. Diseño centrado en las personas que guía, emociona y convierte visitas en clientes.</p>
+          <span class="service-card__num">03</span>
+        </div>
+        <div class="service-card reveal-item" data-delay="0.3">
+          <div class="service-card__accent" style="background:#FF9500"></div>
+          <span class="service-card__icon">❋</span>
+          <h3>Dirección de Arte &amp;<br>Campañas</h3>
+          <p>Concepto y ejecución de campañas visuales para redes, eventos y medios. Coherencia y alma en cada pieza del proyecto.</p>
+          <span class="service-card__num">04</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="contact" id="contact">
+    <div class="contact__deco" aria-hidden="true">
+      <div class="contact__deco-circle"></div>
+    </div>
+    <div class="container">
+      <div class="contact__inner">
+
+        <!-- Left: contact info -->
+        <div class="contact__text">
+          <span class="section-tag section-tag--light">04 — CONTACTO</span>
+          <h2 class="contact__title reveal-item">
+            ¿Tienes<br>un proyecto<br><em>en mente?</em>
+          </h2>
+          <p class="contact__sub reveal-item" data-delay="0.1">
+            Me encantaría escucharte. Cuéntame tu idea y juntos la convertimos en algo extraordinario.
+          </p>
+          <div class="contact__links reveal-item" data-delay="0.2">
+            <a href="mailto:cristian@ledesma.design" class="c-link">
+              <span class="c-link__label">Email</span>
+              <span class="c-link__val">cristian@ledesma.design ↗</span>
+            </a>
+            <a href="#" class="c-link">
+              <span class="c-link__label">Behance</span>
+              <span class="c-link__val">@cristianledesma ↗</span>
+            </a>
+            <a href="#" class="c-link">
+              <span class="c-link__label">Instagram</span>
+              <span class="c-link__val">@calg.creative ↗</span>
+            </a>
+            <a href="#" class="c-link">
+              <span class="c-link__label">LinkedIn</span>
+              <span class="c-link__val">cristian-ledesma ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact__form-wrap">
+          <form class="contact__form reveal-item" id="contactForm" novalidate data-delay="0.15">
+            <div class="form-field">
+              <label for="cName">Nombre</label>
+              <input type="text" id="cName" name="name" placeholder="¿Cómo te llamas?" autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" name="email" placeholder="tu@email.com" autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="cMsg">Mensaje</label>
+              <textarea id="cMsg" name="message" rows="5" placeholder="Cuéntame tu proyecto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--lime btn--full">
+              <span>Enviar mensaje</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              ✓ ¡Mensaje enviado! Te respondo en breve.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="footer__logo">CL</a>
+        <p class="footer__copy">© 2026 Cristian Ledesma · Diseñador Gráfico</p>
+        <a href="#hero" class="footer__top" aria-label="Volver al inicio">↑ Inicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
